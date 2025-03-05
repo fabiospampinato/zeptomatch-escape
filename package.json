@@ -3,7 +3,7 @@
   "repository": "github:fabiospampinato/zeptomatch-escape",
   "description": "A little utility for escaping globs before passing them to zeptomatch.",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "dist/index.js",
   "exports": "./dist/index.js",
