@@ -5,7 +5,7 @@ A little utility for escaping globs before passing them to [`zeptomatch`](https:
 ## Install
 
 ```sh
-npm install --save zeptomatch-escape
+npm install zeptomatch-escape
 ```
 
 ## Usage
@@ -14,7 +14,7 @@ npm install --save zeptomatch-escape
 import zeptomatch from 'zeptomatch';
 import escape from 'zeptomatch-escape';
 
-// Escape special characters from a string
+// Escaping special characters from a string
 
 escape ( '*.js' ); // => '\\*.js'
 
