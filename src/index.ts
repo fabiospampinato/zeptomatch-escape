@@ -1,18 +1,15 @@
 
 /* MAIN */
 
-const escape = (() => {
 
-  const re = /(\\.)|([*?!^{}[\]])|(.)/gs;
-  const replacer = ( _: string, $1: string, $2: string, $3: string ) => $1 || $3 || `\\${$2}`;
+const re = /(\\.)|([*?!^{}[\]])|(.)/gs;
+const replacer = ( _: string, $1: string, $2: string, $3: string ) => $1 || $3 || `\\${$2}`;
 
-  return ( value: string ): string => {
+const escape = ( value: string ): string => {
 
-    return value.replace ( re, replacer );
+  return value.replace ( re, replacer );
 
-  };
-
-})();
+};
 
 /* EXPORT */
 
